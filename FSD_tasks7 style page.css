@@ -1,0 +1,23 @@
+body{
+    background-color: beige;
+    font-family: Arial;
+}
+
+h1{
+    color: brown;
+    text-align: center;
+}
+
+h2{
+    color: darkgreen;
+}
+
+p{
+    color: black;
+    font-size: 18px;
+}
+
+ul{
+    color: darkblue;
+    font-size: 18px;
+}
