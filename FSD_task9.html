@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tamil Movie Booking</title>
+
+<style>
+body{
+    text-align:center;
+    font-family:Arial;
+    background-color:lightyellow;
+}
+
+.movie{
+    display:inline-block;
+    width:220px;
+    border:1px solid black;
+    margin:10px;
+    padding:10px;
+    background-color:white;
+}
+
+img{
+    width:150px;
+    height:150px;
+}
+
+button{
+    background-color:green;
+    color:white;
+    border:none;
+    padding:8px;
+}
+</style>
+
+<script>
+function book(msg){
+    document.getElementById("status").innerHTML = msg;
+}
+</script>
+
+</head>
+
+<body>
+
+<h1>🎬 Tamil Movie Booking</h1>
+
+<h2 id="status">Choose your movie and book your ticket!</h2>
+
+<div class="movie">
+    <img src="https://tse3.mm.bing.net/th/id/OIP.vYtuQZfvP2wzjaOLu0m2JgHaLH?rs=1&pid=ImgDetMain&o=7&rm=3">
+    <h3>Leo</h3>
+    <p>Genre: Action Thriller</p>
+    <p>⭐ 8.5/10</p>
+    <p>Ticket: ₹200</p>
+
+    <button onclick="book('Successfully booked! Get ready for an action-packed Leo experience! 🔥')">
+        Book Ticket
+    </button>
+</div>
+
+<div class="movie">
+    <img src="https://images.news18.com/ibnlive/uploads/2023/09/aranmanai-4-poster-2023-09-3e012576f57eb8bc4db1919086921c68.jpg?impolicy=website&width=640&height=480">
+    <h3>Aranmanai 4</h3>
+    <p>Genre: Horror Comedy</p>
+    <p>⭐ 8.2/10</p>
+    <p>Ticket: ₹180</p>
+
+    <button onclick="book('Successfully booked! Now you are ready to witness horror vibes! 👻')">
+        Book Ticket
+    </button>
+</div>
+
+<div class="movie">
+    <img src="https://tse4.mm.bing.net/th/id/OIP.xZ03mWKit_XOywB1LPdi5QHaJ1?rs=1&pid=ImgDetMain&o=7&rm=3">
+    <h3>Dragon</h3>
+    <p>Genre: Love,Comedy Drama</p>
+    <p>⭐ 8.8/10</p>
+    <p>Ticket: ₹150</p>
+
+    <button onclick="book('Successfully booked! Get ready for fun and laughter! 😂')">
+        Book Ticket
+    </button>
+</div>
+
+<div class="movie">
+    <img src="https://th.bing.com/th/id/OIP._fpdi3ErBhtv8at4Pkz3CgHaLH?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3">
+    <h3>Good Bad Ugly</h3>
+    <p>Genre: Action Comedy</p>
+    <p>⭐ 8.0/10</p>
+    <p>Ticket: ₹220</p>
+
+    <button onclick="book('Successfully booked! Time to enjoy mass action and comedy! 😎')">
+        Book Ticket
+    </button>
+</div>
+
+</body>
+</html>
