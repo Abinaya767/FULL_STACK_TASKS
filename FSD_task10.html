@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sai Abhyankkar Hits</title>
+
+    <style>
+        body{
+            font-family: Arial;
+            text-align: center;
+            background-color: #1e1e1e;
+            color: white;
+        }
+
+        h1{
+            color: gold;
+        }
+
+        .song{
+            display: inline-block;
+            width: 220px;
+            margin: 10px;
+            padding: 10px;
+            background-color: #2d2d2d;
+            border-radius: 10px;
+        }
+
+        img{
+            width: 200px;
+            height: 150px;
+            border-radius: 8px;
+        }
+
+        button{
+            background-color: crimson;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background-color: darkred;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>🎵 Sai Abhyankkar Hits 🎵</h1>
+
+<h2 id="status">Click a song to enjoy the vibes!</h2>
+
+<div class="song">
+    <img src="https://tse2.mm.bing.net/th/id/OIP.PvNoGS4agTGxigmDu43zXQHaKs?rs=1&pid=ImgDetMain&o=7&rm=3">
+    <h3>Katchi Sera</h3>
+    <p>Romantic Melody ❤️</p>
+    <button id="btn1">Play</button>
+</div>
+
+<div class="song">
+    <img src="https://tse1.mm.bing.net/th/id/OIP.EEvdJ0sKLIAKLwFCYqwTgAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3">
+    <h3>Aasa Kooda</h3>
+    <p>Feel-Good Love Song 🌸</p>
+    <button id="btn2">Play</button>
+</div>
+
+<div class="song">
+    <img src="https://tse3.mm.bing.net/th/id/OIP.vr7YUNEFFTpfM9LOcv5DDwHaHa?rs=1&pid=ImgDetMain&o=7&rm=3">
+    <h3>Vizhi Veekura</h3>
+    <p>Soft Romantic Track 💕</p>
+    <button id="btn3">Play</button>
+</div>
+
+<div class="song">
+    <img src="https://static.qobuz.com/images/covers/la/87/n89hz21ur87la_600.jpg">
+    <h3>Oorum Blood</h3>
+    <p>Mass Vibe Anthem 🔥</p>
+    <button id="btn4">Play</button>
+</div>
+
+<script>
+document.getElementById("btn1").addEventListener("click", function() {
+    document.getElementById("status").innerHTML =
+    "🎶 Now Playing: Katchi Sera - Feel the romantic vibes!";
+});
+
+document.getElementById("btn2").addEventListener("click", function() {
+    document.getElementById("status").innerHTML =
+    "🎶 Now Playing: Aasa Kooda - Enjoy the melody!";
+});
+
+document.getElementById("btn3").addEventListener("click", function() {
+    document.getElementById("status").innerHTML =
+    "🎶 Now Playing: Vizhi Veekura - Love is in the air!";
+});
+
+document.getElementById("btn4").addEventListener("click", function() {
+    document.getElementById("status").innerHTML =
+    "🎶 Now Playing: Oorum Blood - Get ready for mass vibes!";
+});
+</script>
+
+</body>
+</html>
