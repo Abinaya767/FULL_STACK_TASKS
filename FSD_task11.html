@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Registration</title>
+
+    <style>
+        body{
+            font-family: Arial;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+
+        .box{
+            width: 350px;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid gray;
+        }
+
+        input{
+            width: 90%;
+            padding: 8px;
+            margin: 8px;
+        }
+
+        button{
+            background-color: green;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+        }
+
+        #msg{
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>WELCOME TO ABI'S ENGINEERING COLLEGE</h1>
+<h3>Enter Your Details To Register In Our College</h3>
+
+<div class="box">
+
+<input type="text" id="name" placeholder="Enter Your Name"><br>
+
+<input type="email" id="email" placeholder="Enter Your Email"><br>
+
+<input type="text" id="phone" placeholder="Enter Your Phone Number"><br>
+
+<input type="text" id="domain" placeholder="Interested Domain"><br>
+
+<input type="date" id="dob"><br><br>
+
+<button onclick="validateForm()">Register</button>
+
+<p id="msg"></p>
+
+</div>
+
+<script>
+
+function validateForm(){
+
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var phone = document.getElementById("phone").value;
+    var domain = document.getElementById("domain").value;
+    var dob = document.getElementById("dob").value;
+
+    if(name == ""){
+        document.getElementById("msg").innerHTML =
+        "Please enter your name!";
+    }
+
+    else if(email == ""){
+        document.getElementById("msg").innerHTML =
+        "Please enter your email!";
+    }
+
+    else if(phone == ""){
+        document.getElementById("msg").innerHTML =
+        "Please enter your phone number!";
+    }
+
+    else if(domain == ""){
+        document.getElementById("msg").innerHTML =
+        "Please enter your interested domain!";
+    }
+
+    else if(dob == ""){
+        document.getElementById("msg").innerHTML =
+        "Please enter your date of birth!";
+    }
+
+    else{
+        document.getElementById("msg").style.color = "green";
+
+        document.getElementById("msg").innerHTML =
+        "Registration Successful! Welcome to ABI'S Engineering College 🎓";
+    }
+
+}
+
+</script>
+
+</body>
+</html>
